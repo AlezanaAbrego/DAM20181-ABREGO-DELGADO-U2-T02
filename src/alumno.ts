@@ -40,22 +40,27 @@ export class Alumno{
     }
 
     deleteAlumno(control):void{
+        let i = 0;
         Alumnos.forEach(function(elemento){
             let index = elemento.no_control.indexOf(control);
+            i++;
+
             if (index > -1) {
-                Alumnos.splice(index, 1);
-            }
+                Alumnos.splice(i-1, 1);
+            };
+
 
         });
     }
 
     updateAlumno(control,nombre,apellidos,promedio,genero,fecha_nacimiento,activo):void{
+        let i =0;
 
         Alumnos.forEach(function(elemento){
             let index = elemento.no_control.indexOf(control);
-            console.log(index);
+            i++;
             if(index> -1){
-                Alumnos[index] = {
+                Alumnos[i-1] = {
                 no_control: control,
                 nombre: nombre,
                 apellidos: apellidos,

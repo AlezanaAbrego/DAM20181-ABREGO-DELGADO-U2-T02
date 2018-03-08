@@ -28,11 +28,11 @@ nuevo.createAlumno("13400378","Alexia","Abrego Delgado", 80, "Femenino", "28-10-
 nuevo.createAlumno("12472278","Jeremy","Abrego Delgado", 70, "Masculino", "28-10-1990",false);
 nuevo.createAlumno("13400404","Juan","Perez Dominguez", 71, "Masculino", "1-05-1994",true);
 nuevo.mostrarAlumnos();
-nuevo.deleteAlumno("13400378");
+//nuevo.deleteAlumno("12472278");
+//nuevo.mostrarAlumnos();
+console.log("----------------------------------------------");
+nuevo.updateAlumno("13400378","Pablo","Miralejos Miracerca", 78, "Masculino", "1-05-2000",false);
 nuevo.mostrarAlumnos();
-nuevo.updateAlumno("13400404","Pablo","Miralejos Miracerca", 78, "Masculino", "1-05-2000",false);
-nuevo.mostrarAlumnos();
-
-
+console.log("----------------------------------------------");
 
 
